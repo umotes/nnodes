@@ -42,7 +42,7 @@
 #define CONTIKI_CONF_H_
 
 /* Platform name, type, and MCU clock rate */
-#define PLATFORM_NAME  "RFA1"
+#define PLATFORM_NAME  "RFR2"
 #define PLATFORM_TYPE  ATMEGA256RFR2
 #ifndef F_CPU
 #define F_CPU          8000000UL
@@ -56,7 +56,7 @@
  */
  /* Clock ticks per second */
 #define CLOCK_CONF_SECOND 128
-#if 0
+#if 1
 /* 16 bit counter overflows every ~10 minutes */
 typedef unsigned short clock_time_t;
 #define CLOCK_LT(a,b)  ((signed short)((a)-(b)) < 0)
@@ -77,16 +77,11 @@ void clock_adjust_ticks(clock_time_t howmany);
 /* The sleep timer requires the crystal and adds a TIMER2 interrupt routine if not already define by clock.c */
 #define AVR_CONF_USE32KCRYSTAL 0
 
-/* Michael Hartman's protobyte board has LED on PORTE1, used for radio on indication */
+/* this board has not LED connected to PORTE  as  of Now, we will use PORTE UART Pin debug out */
 /* However this results in disabling UART0. */
-#define RF230BB_CONF_LEDONPORTE1  0
 
 /* COM port to be used for SLIP connection. This is usually UART0, but see above */
-#if RF230BB_CONF_LEDONPORTE1
-#define SLIP_PORT RS232_PORT_1
-#else
 #define SLIP_PORT RS232_PORT_0
-#endif
 
 /* Pre-allocated memory for loadable modules heap space (in bytes)*/
 /* Default is 4096. Currently used only when elfloader is present. Not tested on Raven */
@@ -127,12 +122,15 @@ typedef unsigned short uip_stats_t;
  * On the RF230 a reduced rx power threshold will not prevent autoack if enabled and requested.
  * These numbers applied to both Raven and Jackdaw give a maximum communication distance of about 15 cm
  * and a 10 meter range to a full-sensitivity RF230 sniffer.
-#define RF230_MAX_TX_POWER 15
-#define RF230_MIN_RX_POWER 30
- */
+ 
+ #define RF230_MAX_TX_POWER 15
+ #define RF230_MIN_RX_POWER 30
+ 
+*/
   /* The rf231 and atmega128rfa1 can use an rssi threshold for triggering rx_busy that saves 0.5ma in rx mode */
-/* 1 - 15 maps into -90 to -48 dBm; the register is written with RF230_MIN_RX_POWER/6 + 1. Undefine for -100dBm sensitivity */
+  /* 1 - 15 maps into -90 to -48 dBm; the register is written with RF230_MIN_RX_POWER/6 + 1. Undefine for -100dBm sensitivity */
 //#define RF230_MIN_RX_POWER        0
+
 
 /* Network setup */
 /* TX routine passes the cca/ack result in the return parameter */
@@ -238,6 +236,8 @@ typedef unsigned short uip_stats_t;
 /* csma needed for burst mode at present. Webserver won't work without it */
 #define NETSTACK_CONF_MAC         csma_driver
 #define NETSTACK_CONF_RDC         contikimac_driver
+#define NETSTACK_CONF_FRAMER      framer_802154
+#define NETSTACK_CONF_RADIO       rf230_driver
 /* Default is two CCA separated by 500 usec */
 #define NETSTACK_CONF_RDC_CHANNEL_CHECK_RATE   8
 #define RF230_CONF_CCA_THRES    -85
@@ -250,8 +250,6 @@ typedef unsigned short uip_stats_t;
 #define WITH_PHASE_OPTIMIZATION                0
 #define CONTIKIMAC_CONF_COMPOWER               1
 #define RIMESTATS_CONF_ENABLED                 1
-#define NETSTACK_CONF_FRAMER      framer_802154
-#define NETSTACK_CONF_RADIO       rf230_driver
 #define CHANNEL_802_15_4          26
 /* The radio needs to interrupt during an rtimer interrupt */
 #define RTIMER_CONF_NESTED_INTERRUPTS 1
@@ -314,6 +312,9 @@ typedef unsigned short uip_stats_t;
 #define UIP_CONF_DS6_ADDR_NBU     3
 #define UIP_CONF_DS6_MADDR_NBU    0
 #define UIP_CONF_DS6_AADDR_NBU    0
+
+//==== NOTE will enable  duty cycleing period after basic testing=============//
+
 //Below gives 10% duty cycle, undef for default 5%
 //#define CXMAC_CONF_ON_TIME (RTIMER_ARCH_SECOND / 80)
 //Below gives 50% duty cycle

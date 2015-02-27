@@ -39,7 +39,7 @@
 #include "lib/sensors.h"
 #include "dev/sht21.h"
 #include "dev/sht21-sensor.h"
-
+#include "dev/twiDriver.h"
 const struct sensors_sensor sht21_sensor;
 
 enum {

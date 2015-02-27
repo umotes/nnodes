@@ -42,14 +42,53 @@
 #include <stdio.h> /* For printf() */
 /*---------------------------------------------------------------------------*/
 PROCESS(hello_world_process, "Hello world process");
-AUTOSTART_PROCESSES(&hello_world_process);
+PROCESS(blink_process, "Blink portb4 led");
+
+//AUTOSTART_PROCESSES(&hello_world_process);
+AUTOSTART_PROCESSES(&hello_world_process,&blink_process);
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(hello_world_process, ev, data)
 {
-  PROCESS_BEGIN();
+  static struct etimer timer;
+  static int count=0;
+  etimer_set(&timer, CLOCK_CONF_SECOND);
 
-  printf("Hello, world\n");
+  PROCESS_BEGIN();
+  while(1)
+ {
+ PROCESS_WAIT_EVENT();
+ 
+ if (ev==PROCESS_EVENT_TIMER)
+   {
+
+   printf("Hello World # %i\n", count);
+   count++;
+   etimer_reset(&timer);
+ 
+  }
+
+}
+
   
   PROCESS_END();
 }
+
+
+PROCESS_THREAD(blink_process, ev, data)
+{
+  static struct etimer timer;
+  PROCESS_BEGIN();
+
+  while(1) {
+    etimer_set(&timer, CLOCK_CONF_SECOND);
+
+    PROCESS_WAIT_EVENT_UNTIL(ev == PROCESS_EVENT_TIMER);
+
+   // printf("Blink... (state %0.2X).\r\n", leds_get());
+ //   leds_toggle(LEDS_GREEN);
+  }
+  PROCESS_END();
+}
+
+
 /*---------------------------------------------------------------------------*/

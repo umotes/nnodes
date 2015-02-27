@@ -38,14 +38,13 @@
 #include "dev/temperature-sensor.h"
 #include "contiki.h"
 #include <util/twi.h>
-
+#include "dev/twiDriver.h"
 #define INPUT_CHANNEL      (1 << INCH_10)
 #define INPUT_REFERENCE    SREF_1
 #define TEMPERATURE_MEM    ADC12MEM10
 
 const struct sensors_sensor temperature_sensor;
 static int8_t ReadTemp73(void);
-static void TWIInit(void);
 
 /*---------------------------------------------------------------------------*/
 static int
@@ -70,52 +69,6 @@ status(int type)
 /*---------------------------------------------------------------------------*/
 SENSORS_SENSOR(temperature_sensor, TEMPERATURE_SENSOR,
                value, configure, status);
-
-static void TWIInit(void)
-{
-    //set SCL to 400kHz
-    TWSR = 0x00;
-    //TWBR = 0x06;  
-    TWBR = (F_CPU / 100000UL -16) / 2;
-    //  SCL frequncy = CPU Clock frequency / (16+2*TWBR*4^TWPS)
-    //enable TWI
-    TWCR = (1<<TWEN);
-}
-
-// Send start signal
-static void TWIStart(void)
-{
-    TWCR = (1<<TWINT)|(1<<TWSTA)|(1<<TWEN);
-    while ((TWCR & (1<<TWINT)) == 0);
-}
-
-//send stop signal
-static void TWIStop(void)
-{
-    TWCR = (1<<TWINT)|(1<<TWSTO)|(1<<TWEN);
-}
-
-static void TWIWrite(uint8_t u8data)
-{
-  TWDR = u8data;
-    TWCR = (1<<TWINT)|(1<<TWEN);
-    while ((TWCR & (1<<TWINT)) == 0);
-}
-
-static uint8_t TWIReadACK(void)
-{
-    TWCR = (1<<TWINT)|(1<<TWEN)|(1<<TWEA);
-    while ((TWCR & (1<<TWINT)) == 0);
-    return TWDR;
-}
-
-static uint8_t TWIGetStatus(void)
-{
-    uint8_t status;
-    //mask status
-    status = TWSR & 0xF8;
-    return status;
-}
 
  
 int8_t ReadTemp73(void)

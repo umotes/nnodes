@@ -39,7 +39,7 @@
 #include "dev/sht21.h"
 #include "dev/sht21-sensor.h"
 #include <util/twi.h>
-
+#include "dev/twiDriver.h"
 
 #define DEBUG 0
 
@@ -59,6 +59,7 @@ static enum twi_err error;
 
 
 /*---------------------------------------------------------------------------*/
+#if 0
 static void TWIInit(void)
 {
   PRINTF("TWIInit\n");
@@ -71,6 +72,7 @@ static void TWIInit(void)
   //enable TWI
   TWCR = (1<<TWEN);
 }
+#endif
 
 uint8_t writeUserRegister(uint8_t val);
 uint16_t read2ByteRegister(uint8_t address, uint8_t command);
@@ -90,6 +92,7 @@ void sht21_init()
   PRINTF("sht21_init done\n");
 }
  
+#if 0
 // Send start signal
 static void TWIStart(void)
 {
@@ -130,6 +133,7 @@ static uint8_t TWIGetStatus(void)
   return status;
 }
 
+#endif
 
 
 uint16_t sht21_temp() {
@@ -147,7 +151,7 @@ uint8_t readUserRegister() {
 // Read 16b register
 uint16_t read2ByteRegister(uint8_t address, uint8_t command) {
   uint8_t byte;
-  uint16_t result;
+  uint16_t result=0;
   byte = readRegisterByte1(address, command);
   if (byte) {
     result = byte;

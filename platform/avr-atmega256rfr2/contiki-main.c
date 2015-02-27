@@ -138,6 +138,7 @@ uint16_t ledtimer;
 #if 1
 /* The proper way to set the signature is */
 #include <avr/signature.h>
+
 #else
 /* Older avr-gcc's may not define the needed SIGNATURE bytes. Do it manually if you get an error */
 typedef struct {const unsigned char B2;const unsigned char B1;const unsigned char B0;} __signature_t;
@@ -157,8 +158,7 @@ FUSES ={.low = 0xe2, .high = 0x99, .extended = 0xff,};
 FUSES ={.low = 0xC2, .high = 0x99, .extended = 0xfe,};
 #endif
 
-uint8_t
-rng_get_uint8(void) {
+uint8_t rng_get_uint8(void) {
 #if 1
   /* Upper two RSSI reg bits (RND_VALUE) are random in rf231 */
   uint8_t j;

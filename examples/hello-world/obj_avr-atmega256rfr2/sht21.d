@@ -12,7 +12,8 @@ obj_avr-atmega256rfr2/sht21.o: \
  ../../core/sys/energest.h ../../core/sys/rtimer.h \
  ../../platform/avr-atmega256rfr2/dev/sht21.h \
  ../../platform/avr-atmega256rfr2/dev/sht21-sensor.h \
- ../../core/lib/sensors.h
+ ../../core/lib/sensors.h \
+ ../../platform/avr-atmega256rfr2/dev/twiDriver.h
  ../../platform/avr-atmega256rfr2/dev/sht21.c ../../core/contiki.h :
  ../../core/contiki-version.h :
  ../../platform/avr-atmega256rfr2/contiki-conf.h :
@@ -27,3 +28,4 @@ obj_avr-atmega256rfr2/sht21.o: \
  ../../platform/avr-atmega256rfr2/dev/sht21.h :
  ../../platform/avr-atmega256rfr2/dev/sht21-sensor.h :
  ../../core/lib/sensors.h :
+ ../../platform/avr-atmega256rfr2/dev/twiDriver.h :

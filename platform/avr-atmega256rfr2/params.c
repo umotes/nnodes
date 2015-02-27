@@ -58,8 +58,8 @@ uint16_t node_id;
 
 #if CONTIKI_CONF_RANDOM_MAC
 extern uint8_t rng_get_uint8(void);
-static void
-generate_new_eui64(uint8_t eui64[8]) {
+static void generate_new_eui64(uint8_t eui64[8]) 
+{
   eui64[0] = 0x02;
   eui64[1] = rng_get_uint8();
   eui64[2] = rng_get_uint8();
@@ -119,8 +119,8 @@ uint8_t eemem_txpower EEMEM = PARAMS_TXPOWER;
 static uint8_t randomeui64;
 #endif
 
-uint8_t
-params_get_channel(void) {
+uint8_t params_get_channel(void) 
+{
   uint8_t x[2];
   *(uint16_t *)x = eeprom_read_word ((uint16_t *)&eemem_channel);
 /* Don't return an invalid channel number */
@@ -156,8 +156,9 @@ params_get_channel(void) {
 /* Always returns a valid channel */
   return x[0];
 }
-uint8_t
-params_get_eui64(uint8_t *eui64) {
+
+
+uint8_t params_get_eui64(uint8_t *eui64) {
   cli();
   eeprom_read_block ((void *)eui64, &eemem_mac_address, sizeof(linkaddr_t));
   sei();
@@ -167,24 +168,25 @@ params_get_eui64(uint8_t *eui64) {
   return 0;
 #endif
 }
-uint16_t
-params_get_panid(void) {
+
+uint16_t params_get_panid(void) 
+{
   return eeprom_read_word(&eemem_panid);
 }
-uint16_t
-params_get_panaddr(void) {
+uint16_t params_get_panaddr(void)
+
+{
   return eeprom_read_word (&eemem_panaddr);
 }
-uint8_t
-params_get_txpower(void)
+uint8_t params_get_txpower(void)
 {
   return eeprom_read_byte(&eemem_txpower);
 }
 
 #else /* CONTIKI_CONF_SETTINGS_MANAGER */
 
-uint8_t
-params_get_channel() {
+uint8_t params_get_channel(void) 
+{
   uint8_t x;
   size_t  size = 1;
   if (settings_get(SETTINGS_KEY_CHANNEL, 0,(unsigned char*)&x, &size) == SETTINGS_STATUS_OK) {
@@ -197,8 +199,8 @@ params_get_channel() {
   }
   return x;
 }
-uint8_t
-params_get_eui64(uint8_t *eui64) {
+
+uint8_t params_get_eui64(uint8_t *eui64) {
   size_t size = sizeof(linkaddr_t); 
   if(settings_get(SETTINGS_KEY_EUI64, 0, (unsigned char*)eui64, &size) == SETTINGS_STATUS_OK) {
     PRINTD("<-Get EUI64 MAC\n");
@@ -219,8 +221,7 @@ params_get_eui64(uint8_t *eui64) {
   return 0;
 #endif
 }
-uint16_t
-params_get_panid(void) {
+uint16_t params_get_panid(void) {
   uint16_t x;
   size_t  size = 2;
   if (settings_get(SETTINGS_KEY_PAN_ID, 0,(unsigned char*)&x, &size) == SETTINGS_STATUS_OK) {
@@ -233,8 +234,8 @@ params_get_panid(void) {
   }
   return x;
 }
-uint16_t
-params_get_panaddr(void) {
+
+uint16_t params_get_panaddr(void) {
   uint16_t x;
   size_t  size = 2;
   if (settings_get(SETTINGS_KEY_PAN_ADDR, 0,(unsigned char*)&x, &size) == SETTINGS_STATUS_OK) {
@@ -247,8 +248,7 @@ params_get_panaddr(void) {
   }        
   return x;
 }
-uint8_t
-params_get_txpower(void) {
+uint8_t params_get_txpower(void) {
   uint8_t x;
   size_t  size = 1;
   if (settings_get(SETTINGS_KEY_TXPOWER, 0,(unsigned char*)&x, &size) == SETTINGS_STATUS_OK) {

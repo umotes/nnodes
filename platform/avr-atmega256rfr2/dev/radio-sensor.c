@@ -45,8 +45,7 @@ const struct sensors_sensor radio_sensor;
 static int active;
 
 /*---------------------------------------------------------------------------*/
-static int
-value(int type)
+static int value(int type)
 {
   switch(type) {
   case RADIO_SENSOR_LAST_PACKET:
@@ -57,8 +56,7 @@ value(int type)
   }
 } 
 /*---------------------------------------------------------------------------*/
-static int
-configure(int type, int c)
+static int configure(int type, int c)
 {
   if(type == SENSORS_ACTIVE) {
     active = c;
@@ -67,8 +65,7 @@ configure(int type, int c)
   return 0;
 }
 /*---------------------------------------------------------------------------*/
-static int
-status(int type)
+static int status(int type)
 {
   switch(type) {
   case SENSORS_ACTIVE:
