@@ -1,5 +1,7 @@
 obj_avr-atmega256rfr2/cxmac.o: ../../core/net/mac/cxmac/cxmac.c \
- ../../core/dev/leds.h ../../platform/avr-atmega256rfr2/contiki-conf.h \
+ ../../platform/avr-atmega256rfr2/dev/leds.h \
+ ../../platform/avr-atmega256rfr2/contiki-conf.h \
+ ../../platform/avr-atmega256rfr2/platform-common.h \
  ../../core/dev/radio.h ../../core/dev/watchdog.h \
  ../../core/net/netstack.h ../../core/net/llsec/llsec.h \
  ../../core/net/mac/mac.h ../../core/net/mac/rdc.h \
@@ -35,7 +37,9 @@ obj_avr-atmega256rfr2/cxmac.o: ../../core/net/mac/cxmac/cxmac.c \
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h \
  ../../core/net/rime/trickle.h ../../core/sys/compower.h
 ../../core/net/mac/cxmac/cxmac.c :
- ../../core/dev/leds.h ../../platform/avr-atmega256rfr2/contiki-conf.h :
+ ../../platform/avr-atmega256rfr2/dev/leds.h :
+ ../../platform/avr-atmega256rfr2/contiki-conf.h :
+ ../../platform/avr-atmega256rfr2/platform-common.h :
  ../../core/dev/radio.h ../../core/dev/watchdog.h :
  ../../core/net/netstack.h ../../core/net/llsec/llsec.h :
  ../../core/net/mac/mac.h ../../core/net/mac/rdc.h :

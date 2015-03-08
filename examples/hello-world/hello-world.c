@@ -38,20 +38,25 @@
  */
 
 #include "contiki.h"
+#include "dev/leds.h"
 
 #include <stdio.h> /* For printf() */
 /*---------------------------------------------------------------------------*/
+
+
 PROCESS(hello_world_process, "Hello world process");
 PROCESS(blink_process, "Blink portb4 led");
+//static struct etimer et_blink;
+//static uint16_t count;
 
 //AUTOSTART_PROCESSES(&hello_world_process);
-AUTOSTART_PROCESSES(&hello_world_process,&blink_process);
+AUTOSTART_PROCESSES(&hello_world_process, &blink_process);
 /*---------------------------------------------------------------------------*/
 PROCESS_THREAD(hello_world_process, ev, data)
 {
   static struct etimer timer;
   static int count=0;
-  etimer_set(&timer, CLOCK_CONF_SECOND);
+  etimer_set(&timer, CLOCK_CONF_SECOND/16);
 
   PROCESS_BEGIN();
   while(1)
@@ -73,22 +78,30 @@ PROCESS_THREAD(hello_world_process, ev, data)
   PROCESS_END();
 }
 
-
 PROCESS_THREAD(blink_process, ev, data)
 {
-  static struct etimer timer;
   PROCESS_BEGIN();
 
+  static struct etimer et_blink;
+//  static int blinks = 0;
+
   while(1) {
-    etimer_set(&timer, CLOCK_CONF_SECOND);
+    etimer_set(&et_blink, CLOCK_SECOND/12);
 
     PROCESS_WAIT_EVENT_UNTIL(ev == PROCESS_EVENT_TIMER);
 
-   // printf("Blink... (state %0.2X).\r\n", leds_get());
- //   leds_toggle(LEDS_GREEN);
+    LEDS_PEDIR |=0x68;
+    LEDS_PEOUT &=~(0X68);
+
+
+//   leds_off(LEDS_PBOUT, LEDS_YELLOW);
+   //  clock_delay_msec(5); 
+// leds_on(LEDS_PBOUT, LEDS_YELLOW);
+//  LEDS_PBOUT ^=(LEDS_YELLOW);
+   leds_toggle(LEDS_YELLOW);
   }
+
   PROCESS_END();
 }
 
-
-/*---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------*/

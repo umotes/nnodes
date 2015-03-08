@@ -66,14 +66,12 @@
 #include "contiki-net.h"
 #include "contiki-lib.h"
 #include "net/ip/uip.h"
+#include "dev/leds.h"
 
 #include "dev/rs232.h"
 #include "dev/serial-line.h"
 #include "dev/slip.h"
 
-#ifdef RAVEN_LCD_INTERFACE
-#include "raven-lcd.h"
-#endif
 
 #if AVR_WEBSERVER
 #include "httpd-fs.h"
@@ -260,7 +258,7 @@ void initialize(void)
  */
   random_init(rng_get_uint8());
   netstack_init();
-  
+  leds_init();
   
   /* Set addresses BEFORE starting tcpip process */
   /* Setting link addr to all 3's */

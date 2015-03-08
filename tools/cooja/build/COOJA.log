@@ -1,173 +1,120 @@
-[19:31:54 - AWT-EventQueue-0] [Cooja.java:2865] [INFO] - External tools default settings: /external_tools_linux.config
-[19:31:54 - AWT-EventQueue-0] [Cooja.java:2895] [INFO] - External tools user settings: /home/user/.cooja.user.properties
-[19:32:18 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:32:18 - AWT-EventQueue-0] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
-[19:33:19 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:33:37 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:33:40 - Thread-2] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630020552
-[19:34:05 - Thread-2] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630045207	Duration: 24655 ms	Simulated time 575791 ms	Ratio 23.353924153315756
-[19:35:42 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:35:57 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:36:19 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:36:22 - Thread-5] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630182725
-[19:36:58 - Thread-5] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630218030	Duration: 35305 ms	Simulated time 601682 ms	Ratio 17.042401926072795
-[19:39:35 - AWT-EventQueue-0] [AbstractRadioMedium.java:198] [FATAL] - Connection source turned off radio: org.contikios.cooja.mspmote.interfaces.Msp802154Radio@a41a80
-[19:39:37 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:39:53 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:39:55 - Thread-7] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630395965
-[19:40:04 - Thread-7] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630404605	Duration: 8640 ms	Simulated time 321131 ms	Ratio 37.167939814814815
-[19:40:04 - Thread-8] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:40:04 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:40:05 - Thread-8] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[19:40:05 - Thread-9] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630405611
-[19:40:17 - Thread-9] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630417004	Duration: 11393 ms	Simulated time 361781 ms	Ratio 31.754673922584043
-[19:40:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:40:27 - Thread-11] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630427390
-[19:40:58 - Thread-11] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630458992	Duration: 31602 ms	Simulated time 1113417 ms	Ratio 35.23248528574141
-[19:41:04 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:41:17 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:41:22 - Thread-13] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630482556
-[19:41:23 - Thread-13] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630483578	Duration: 1022 ms	Simulated time 2169 ms	Ratio 2.1223091976516635
-[19:41:45 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:41:49 - Thread-15] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630509076
-[19:45:04 - Thread-15] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630704717	Duration: 195641 ms	Simulated time 5609959 ms	Ratio 28.674761425263622
-[19:45:06 - Thread-16] [Cooja.java:4267] [WARN] - Replaced [CONTIKI_DIR]/examples/udp-ipv6/udp-client.sky with /home/user/contiki/examples/udp-ipv6/udp-client.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
-[19:45:06 - Thread-16] [Cooja.java:4146] [WARN] - Path is not portable: '/home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:45:06 - Thread-16] [Cooja.java:4267] [WARN] - Replaced [CONTIKI_DIR]/examples/udp-ipv6/udp-server.sky with /home/user/contiki/examples/udp-ipv6/udp-server.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
-[19:45:06 - Thread-16] [Cooja.java:4146] [WARN] - Path is not portable: '/home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:45:07 - Thread-16] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:45:14 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:45:27 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:45:31 - Thread-19] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630731611
-[19:45:43 - Thread-19] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630743563	Duration: 11952 ms	Simulated time 443041 ms	Ratio 37.06835676037483
-[19:45:50 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:45:53 - Thread-21] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630753886
-[19:47:07 - Thread-21] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630827925	Duration: 74039 ms	Simulated time 1987416 ms	Ratio 26.842826078148004
-[19:47:08 - Thread-22] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:47:08 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:47:08 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:47:08 - Thread-22] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[19:47:09 - Thread-23] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630829136
-[19:47:27 - Thread-23] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630847793	Duration: 18657 ms	Simulated time 304649 ms	Ratio 16.32893820013936
-[19:49:14 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:49:27 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:49:42 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:49:44 - Thread-26] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630984018
-[19:49:58 - Thread-26] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424630998069	Duration: 14051 ms	Simulated time 292608 ms	Ratio 20.824709985054444
-[19:49:58 - Thread-27] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:49:58 - Thread-27] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:49:58 - Thread-27] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:49:58 - Thread-27] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[19:49:58 - Thread-28] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424630998666
-[19:50:07 - Thread-28] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631007461	Duration: 8795 ms	Simulated time 251040 ms	Ratio 28.543490619670266
-[19:52:53 - Thread-29] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631173853
-[19:52:58 - Thread-29] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631178826	Duration: 4973 ms	Simulated time 349167 ms	Ratio 70.21254775789262
-[19:53:00 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:53:12 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:53:35 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:53:36 - Thread-32] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631216633
-[19:53:49 - Thread-32] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631229984	Duration: 13351 ms	Simulated time 348337 ms	Ratio 26.09070481611864
-[19:53:50 - Thread-33] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:53:50 - Thread-33] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:53:50 - Thread-33] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:53:50 - Thread-33] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[19:53:50 - Thread-34] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631230389
-[19:53:59 - Thread-34] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631239031	Duration: 8642 ms	Simulated time 147666 ms	Ratio 17.087016894237443
-[19:55:58 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:56:50 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:57:05 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:57:07 - Thread-39] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631427927
-[19:57:21 - Thread-39] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631441952	Duration: 14025 ms	Simulated time 194291 ms	Ratio 13.85319073083779
-[19:57:22 - Thread-40] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:57:22 - Thread-40] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[19:57:22 - Thread-40] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[19:57:22 - Thread-40] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[19:57:22 - Thread-41] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631442521
-[19:57:56 - Thread-41] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631476813	Duration: 34292 ms	Simulated time 947916 ms	Ratio 27.64248221159454
-[19:59:36 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[19:59:56 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:00:10 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:00:19 - Thread-44] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631619924
-[20:01:02 - Thread-44] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631662339	Duration: 42415 ms	Simulated time 961649 ms	Ratio 22.6723800542261
-[20:02:38 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:02:55 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:03:15 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:03:17 - Thread-47] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631797865
-[20:03:30 - Thread-47] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631810077	Duration: 12212 ms	Simulated time 137983 ms	Ratio 11.298968227972486
-[20:03:30 - Thread-48] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:03:30 - Thread-48] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:03:30 - Thread-48] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:03:30 - Thread-48] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:03:30 - Thread-49] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424631810696
-[20:03:41 - Thread-49] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424631821588	Duration: 10892 ms	Simulated time 323774 ms	Ratio 29.72585383767903
-[20:12:08 - Thread-50] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632328214
-[20:12:13 - Thread-50] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632333950	Duration: 5736 ms	Simulated time 421102 ms	Ratio 73.41387726638773
-[20:12:14 - Thread-51] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:12:14 - Thread-51] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:12:14 - Thread-51] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:12:14 - Thread-51] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:12:14 - Thread-52] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632334679
-[20:12:17 - Thread-52] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632337638	Duration: 2959 ms	Simulated time 21108 ms	Ratio 7.133491044271714
-[20:14:35 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:14:57 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:15:12 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:15:14 - Thread-55] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632514707
-[20:15:23 - Thread-55] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632523044	Duration: 8337 ms	Simulated time 117748 ms	Ratio 14.123545639918436
-[20:15:24 - Thread-56] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632524187
-[20:15:24 - Thread-56] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632524190	Duration: 3 ms	Simulated time 117749 ms	Ratio 39249.666666666664
-[20:15:25 - Thread-57] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632525100
-[20:15:28 - Thread-57] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632528513	Duration: 3413 ms	Simulated time 171920 ms	Ratio 50.37210665104014
-[20:15:28 - Thread-58] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:15:28 - Thread-58] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:15:28 - Thread-58] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:15:28 - Thread-58] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:15:29 - Thread-59] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632529253
-[20:15:55 - AWT-EventQueue-0] [SerialSocketClient.java:371] [INFO] - Connecting: localhost:1234
-[20:15:55 - AWT-EventQueue-0] [SerialSocketClient.java:379] [ERROR] - Connection refused
-[20:16:39 - Thread-59] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632599687	Duration: 70434 ms	Simulated time 1287670 ms	Ratio 18.28193770054235
-[20:16:39 - Thread-60] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:16:39 - Thread-60] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:16:39 - Thread-60] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:16:40 - Thread-60] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:16:40 - Thread-61] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632600758
-[20:16:45 - Thread-61] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424632605238	Duration: 4480 ms	Simulated time 21145 ms	Ratio 4.719866071428571
-[20:21:48 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:22:01 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:22:13 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:22:17 - Thread-64] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424632937555
-[20:23:40 - Thread-65] [Cooja.java:4267] [WARN] - Replaced [CONTIKI_DIR]/examples/udp-ipv6/udp-client.sky with /home/user/contiki/examples/udp-ipv6/udp-client.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
-[20:23:40 - Thread-65] [Cooja.java:4146] [WARN] - Path is not portable: '/home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:23:40 - Thread-65] [Cooja.java:4267] [WARN] - Replaced [CONTIKI_DIR]/examples/udp-ipv6/udp-server.sky with /home/user/contiki/examples/udp-ipv6/udp-server.sky (default: ../../..), but could not find it. This does not have to be an error, as the file might be created later.
-[20:23:40 - Thread-65] [Cooja.java:4146] [WARN] - Path is not portable: '/home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:23:41 - Thread-64] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424633021113	Duration: 83558 ms	Simulated time 2088770 ms	Ratio 24.997845807702433
-[20:23:41 - Thread-65] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:23:48 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:24:05 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:24:24 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:24:28 - Thread-70] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424633068046
-[20:24:39 - Thread-70] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424633079552	Duration: 11506 ms	Simulated time 192577 ms	Ratio 16.737093690248567
-[20:24:39 - Thread-71] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:24:39 - Thread-71] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:24:39 - Thread-71] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:24:39 - Thread-71] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:24:40 - Thread-72] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424633080040
-[20:25:08 - Thread-72] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424633108918	Duration: 28878 ms	Simulated time 642412 ms	Ratio 22.245723388046265
-[20:25:09 - Thread-73] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:25:09 - Thread-73] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:25:09 - Thread-73] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:25:09 - Thread-73] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:25:09 - Thread-74] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424633109769
-[20:25:12 - Thread-74] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424633112868	Duration: 3099 ms	Simulated time 8077 ms	Ratio 2.606324620845434
-[20:27:37 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:27:55 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:28:08 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:28:09 - Thread-77] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424633289317
-[20:28:25 - Thread-77] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424633305242	Duration: 15925 ms	Simulated time 205343 ms	Ratio 12.894379905808478
-[20:28:25 - Thread-78] [Simulation.java:420] [INFO] - Simulation random seed: 123456
-[20:28:25 - Thread-78] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-client.sky
-[20:28:25 - Thread-78] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/contiki/examples/udp-ipv6/udp-server.sky
-[20:28:25 - Thread-78] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
-[20:28:26 - Thread-79] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1424633306018
-[20:28:41 - Thread-79] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1424633321647	Duration: 15629 ms	Simulated time 257166 ms	Ratio 16.454411670612323
-[20:28:54 - AWT-EventQueue-0] [Cooja.java:2647] [INFO] - Save command cancelled by user...
-[20:29:04 - AWT-EventQueue-0] [Cooja.java:2647] [INFO] - Save command cancelled by user...
+[08:23:41 - AWT-EventQueue-0] [Cooja.java:2865] [INFO] - External tools default settings: /external_tools_linux.config
+[08:23:41 - AWT-EventQueue-0] [Cooja.java:2895] [INFO] - External tools user settings: /home/user/.cooja.user.properties
+[08:23:56 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:23:56 - AWT-EventQueue-0] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+[08:24:19 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:24:43 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:24:58 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:25:02 - Thread-3] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540302466
+[08:31:22 - Thread-3] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540682100	Duration: 379634 ms	Simulated time 1319672 ms	Ratio 3.476169152394148
+[08:31:22 - Thread-4] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:31:22 - Thread-4] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:31:22 - Thread-4] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:31:22 - Thread-4] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:31:22 - Thread-4] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:31:22 - Thread-5] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540682895
+[08:31:38 - Thread-5] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540698748	Duration: 15853 ms	Simulated time 66387 ms	Ratio 4.187661641329717
+[08:31:38 - Thread-6] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:31:38 - Thread-6] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:31:38 - Thread-6] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:31:39 - Thread-6] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:31:39 - Thread-6] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:31:39 - Thread-7] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540699465
+[08:33:05 - Thread-7] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540785393	Duration: 85928 ms	Simulated time 93363 ms	Ratio 1.08652592868448
+[08:33:05 - Thread-8] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:33:05 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:33:05 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:33:05 - Thread-8] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:33:06 - Thread-8] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:33:06 - Thread-9] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540786548
+[08:34:25 - Thread-9] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540865755	Duration: 79207 ms	Simulated time 83883 ms	Ratio 1.0590351862840406
+[08:34:25 - Thread-10] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:34:25 - Thread-10] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:34:26 - Thread-10] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:34:26 - Thread-10] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:34:26 - Thread-10] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:34:26 - Thread-11] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425540866549
+[08:35:24 - Thread-11] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425540924286	Duration: 57737 ms	Simulated time 77589 ms	Ratio 1.343834975838717
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:25 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:49 - Thread-13] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:55:50 - Thread-13] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:55:53 - Thread-14] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542153959
+[08:58:32 - Thread-14] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542312016	Duration: 158057 ms	Simulated time 99715 ms	Ratio 0.630879998987707
+[08:58:32 - Thread-15] [AbstractRadioMedium.java:198] [FATAL] - Connection source turned off radio: org.contikios.cooja.mspmote.interfaces.Msp802154Radio@7d25a1
+[08:58:32 - Thread-15] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:32 - Thread-15] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[08:58:33 - Thread-15] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[08:58:33 - Thread-16] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542313356
+[09:00:36 - Thread-16] [Simulation.java:292] [FATAL] - Simulation stopped due to error: Jumping to a time that is further than possible not LPM maxCycles:307411516 cycles: 307411397
+java.lang.IllegalArgumentException: Jumping to a time that is further than possible not LPM maxCycles:307411516 cycles: 307411397
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:239)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:319)
+	at org.contikios.cooja.mspmote.MspMoteTimeEvent.execute(MspMoteTimeEvent.java:53)
+	at org.contikios.cooja.mspmote.interfaces.Msp802154Radio$6.execute(Msp802154Radio.java:262)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:745)
+[09:00:39 - Thread-16] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542439595	Duration: 126239 ms	Simulated time 79202 ms	Ratio 0.6273972385712815
+[09:01:03 - Thread-18] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542463412
+[09:01:03 - Thread-18] [Simulation.java:292] [FATAL] - Simulation stopped due to error: Jumping to a time that is further than possible not LPM maxCycles:307620170 cycles: 307620049
+java.lang.IllegalArgumentException: Jumping to a time that is further than possible not LPM maxCycles:307620170 cycles: 307620049
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:239)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:319)
+	at org.contikios.cooja.mspmote.MspMoteTimeEvent.execute(MspMoteTimeEvent.java:53)
+	at org.contikios.cooja.mspmote.interfaces.Msp802154Radio$6.execute(Msp802154Radio.java:262)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:745)
+[09:01:05 - Thread-18] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542465797	Duration: 2385 ms	Simulated time 79202 ms	Ratio 33.2083857442348
+[09:01:07 - Thread-20] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542467536
+[09:01:07 - Thread-20] [Simulation.java:292] [FATAL] - Simulation stopped due to error: Jumping to a time that is further than possible not LPM maxCycles:307411641 cycles: 307411397
+java.lang.IllegalArgumentException: Jumping to a time that is further than possible not LPM maxCycles:307411641 cycles: 307411397
+	at se.sics.mspsim.core.MSP430.stepMicros(MSP430.java:239)
+	at org.contikios.cooja.mspmote.MspMote.execute(MspMote.java:319)
+	at org.contikios.cooja.mspmote.MspMoteTimeEvent.execute(MspMoteTimeEvent.java:53)
+	at org.contikios.cooja.mspmote.interfaces.Msp802154Radio$6.execute(Msp802154Radio.java:262)
+	at org.contikios.cooja.Simulation.run(Simulation.java:280)
+	at java.lang.Thread.run(Thread.java:745)
+[09:01:12 - Thread-20] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542472309	Duration: 4773 ms	Simulated time 79202 ms	Ratio 16.59375654724492
+[09:01:14 - Thread-22] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:01:14 - Thread-22] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:01:14 - Thread-22] [TimeLine.java:567] [INFO] - Zoom level: 500.0 microseconds/pixel 
+[09:01:18 - Thread-23] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542478979
+[09:05:47 - Thread-23] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425542747011	Duration: 268032 ms	Simulated time 168903 ms	Ratio 0.6301598316618912
+[09:05:53 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:06:09 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[09:06:27 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make root.sky TARGET=sky 
+[09:06:53 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[09:07:14 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:07:18 - Thread-27] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425542838852
+[09:11:14 - Thread-27] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425543074025	Duration: 235173 ms	Simulated time 280309 ms	Ratio 1.1919267943173748
+[09:11:19 - AWT-EventQueue-0] [AbstractRadioMedium.java:198] [FATAL] - Connection source turned off radio: org.contikios.cooja.mspmote.interfaces.Msp802154Radio@1dc8e06
+[09:11:20 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:11:42 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/sink.sky
+[09:12:00 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make root.sky TARGET=sky 
+[09:12:05 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/root.sky
+[09:12:21 - AWT-EventQueue-0] [MspMote.java:233] [INFO] - Loading firmware from: /home/user/nnodes/examples/ipv6/multicast/intermediate.sky
+[09:12:28 - Thread-31] [Simulation.java:252] [INFO] - Simulation main loop started, system time: 1425543148556
+[09:13:18 - Thread-31] [Simulation.java:311] [INFO] - Simulation main loop stopped, system time: 1425543198307	Duration: 49751 ms	Simulated time 105403 ms	Ratio 2.118610681192338
+[09:17:54 - AWT-EventQueue-0] [Simulation.java:420] [INFO] - Simulation random seed: 123456
+[09:18:29 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make root.elf TARGET=micaz 
+[09:19:05 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make clean TARGET=micaz 
+[09:19:06 - AWT-EventQueue-0] [CompileContiki.java:140] [INFO] - > make clean TARGET=micaz 

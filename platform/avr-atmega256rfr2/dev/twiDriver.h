@@ -38,7 +38,6 @@
 #include <util/twi.h>
 
 
-
 // TWI Init  function, this fucntion initializes the SCL 
 void TWIInit(void);
 

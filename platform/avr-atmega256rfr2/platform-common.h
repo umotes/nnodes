@@ -56,24 +56,31 @@
 #define PORT_PIN_7 0x80
 #define PORT_PIN_ALL 0xFF
 
+#define LEDS_PBDIR DDRB // port direction register
+#define LEDS_PBOUT PORTB // port register
 
-#define LEDS_PxDIR DDRA // port direction register
-#define LEDS_PxOUT PORTA // port register
-#define LEDS_POWER  0x04 //red led
+#define LEDS_PEOUT PORTE // port register
+#define LEDS_PEDIR DDRE // port direction register
+
+#define READ  1
+#define WRITE 0
+
+#define LEDS_POWER  0x01 //red led
 #define LEDS_STATUS 0x02 // green led
-#define LEDS_USER   0x01 // yellow led
-
-
-
-
+#define LEDS_USER   0x10 // yellow led
 
 #define MAX_INT8U_VALUE 0xFF
 #define MAX_INT16U_VALUE 0xFFFF
 #define MAX_INT32U_VALUE 0xFFFFFFFF
 
+#define LEDS_CONF_RED    0x01
+#define LEDS_CONF_GREEN  0x02
+#define LEDS_CONF_YELLOW 0x10
 
 
-
+#define LEDS_RED      0x01
+#define LEDS_GREEN    0x02
+#define LEDS_YELLOW   0x10
 
 
 

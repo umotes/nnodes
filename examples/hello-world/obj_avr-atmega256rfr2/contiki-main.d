@@ -2,6 +2,7 @@ obj_avr-atmega256rfr2/contiki-main.o: \
  ../../platform/avr-atmega256rfr2/./contiki-main.c \
  ../../core/dev/watchdog.h ../../core/net/mac/sicslowmac/sicslowmac.h \
  ../../core/net/mac/rdc.h ../../platform/avr-atmega256rfr2/contiki-conf.h \
+ ../../platform/avr-atmega256rfr2/platform-common.h \
  ../../core/net/mac/mac.h ../../core/dev/radio.h \
  ../../core/loader/symbols-def.h ../../core/loader/symtab.h \
  ../../platform/avr-atmega256rfr2/./params.h ../../core/lib/settings.h \
@@ -54,12 +55,14 @@ obj_avr-atmega256rfr2/contiki-main.o: \
  ../../core/net/rime/rmh.h ../../core/net/rime/route.h \
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h \
  ../../core/net/rime/trickle.h ../../core/net/netstack.h \
- ../../cpu/avr/dev/rs232.h ../../cpu/avr/dev/rs232_atmega128rfa1.h \
- ../../core/dev/serial-line.h ../../core/dev/slip.h \
- ../../core/net/rime/rime.h ../../core/lib/print-stats.h
+ ../../platform/avr-atmega256rfr2/./dev/leds.h ../../cpu/avr/dev/rs232.h \
+ ../../cpu/avr/dev/rs232_atmega128rfa1.h ../../core/dev/serial-line.h \
+ ../../core/dev/slip.h ../../core/net/rime/rime.h \
+ ../../core/lib/print-stats.h
  ../../platform/avr-atmega256rfr2/./contiki-main.c :
  ../../core/dev/watchdog.h ../../core/net/mac/sicslowmac/sicslowmac.h :
  ../../core/net/mac/rdc.h ../../platform/avr-atmega256rfr2/contiki-conf.h :
+ ../../platform/avr-atmega256rfr2/platform-common.h :
  ../../core/net/mac/mac.h ../../core/dev/radio.h :
  ../../core/loader/symbols-def.h ../../core/loader/symtab.h :
  ../../platform/avr-atmega256rfr2/./params.h ../../core/lib/settings.h :
@@ -112,6 +115,7 @@ obj_avr-atmega256rfr2/contiki-main.o: \
  ../../core/net/rime/rmh.h ../../core/net/rime/route.h :
  ../../core/net/rime/rucb.h ../../core/net/rime/timesynch.h :
  ../../core/net/rime/trickle.h ../../core/net/netstack.h :
- ../../cpu/avr/dev/rs232.h ../../cpu/avr/dev/rs232_atmega128rfa1.h :
- ../../core/dev/serial-line.h ../../core/dev/slip.h :
- ../../core/net/rime/rime.h ../../core/lib/print-stats.h :
+ ../../platform/avr-atmega256rfr2/./dev/leds.h ../../cpu/avr/dev/rs232.h :
+ ../../cpu/avr/dev/rs232_atmega128rfa1.h ../../core/dev/serial-line.h :
+ ../../core/dev/slip.h ../../core/net/rime/rime.h :
+ ../../core/lib/print-stats.h :

@@ -78,7 +78,7 @@ multicast_send(void)
 
   id = uip_htonl(seq_id);
   memset(buf, 0, MAX_PAYLOAD_LEN);
-  memcpy(buf, &id, sizeof(seq_id));
+  memcpy(buf, "hello fron", 30);
 
   PRINTF("Send to: ");
   PRINT6ADDR(&mcast_conn->ripaddr);
@@ -87,7 +87,8 @@ multicast_send(void)
   PRINTF(" %lu bytes\n", (unsigned long)sizeof(id));
 
   seq_id++;
-  uip_udp_packet_send(mcast_conn, buf, sizeof(id));
+  //uip_udp_packet_send(mcast_conn, buf, sizeof(id));
+  uip_udp_packet_send(mcast_conn, buf, 30);
 }
 /*---------------------------------------------------------------------------*/
 static void
